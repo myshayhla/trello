@@ -10,13 +10,11 @@ export function POST() {
     hello: "trello",
   });
 }
-
 export function UPDATE() {
   return NextResponse.json({
     hello: "trello",
   });
 }
-
 export function DELETE() {
   return NextResponse.json({
     hello: "trello",
