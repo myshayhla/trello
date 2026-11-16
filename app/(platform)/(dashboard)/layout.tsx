@@ -11,13 +11,15 @@
 //   };
 // }
 
-const OrganizationIdLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <>
-      {/* <OrgControl /> */}
-      {children}
-    </>
-  );
-};
+import React from 'react';
+import Navbar from './_components/navbar';
 
-export default OrganizationIdLayout;
+export default function DashboardLayout({children}:{children: React.ReactNode}) {
+  return (
+    <div className='h-screen'>
+      <Navbar />
+      {children}
+    </div>
+  );
+}
+
